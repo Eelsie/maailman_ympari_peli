@@ -1,0 +1,65 @@
+/* älypää elements */
+
+.circle {
+  width: 3%;
+  margin: 0.3%;
+}
+
+.circle:first-of-type {
+  margin-left: 0;
+}
+
+.circle:nth-child(5n) {
+  margin-right: 2.8%;
+}
+
+.circle:last-of-type {
+  margin-right: 0;
+}
+
+.btn__qline {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: $lightgray;
+}
+
+.btn__qline--green {
+  background-color: $green;
+  color: #fff;
+}
+
+.btn__qline--red {
+  background-color: $red;
+}
+
+.bar {
+  margin: 2rem 0;
+}
+
+.bar div {
+  display:inline-block;
+  height: 3rem;
+}
+
+.progress-container {
+  width: 70%;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: $lightgray;
+}
+
+.progress {
+  background-color: $blue;
+  width: 0;
+}
+
+.seconds, .score {
+  width: 10%;
+  margin-left: 3%;
+  float: right;
+  padding: 1rem;
+  text-align: center;
+}

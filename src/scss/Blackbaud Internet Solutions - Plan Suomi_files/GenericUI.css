@@ -1,0 +1,2890 @@
+﻿
+
+#__asptrace
+{
+    background-color:#FFFFFF;
+}
+a:active
+{
+  outline: none;
+}
+div
+{
+  outline: none;
+}
+
+.clear
+{
+    display:block;
+    clear:both;
+    position:relative;
+}
+
+textarea
+{
+    font-family: Verdana, Helvetica, sans-serif !Important;
+    font-size: 12px !Important;
+}
+
+/* START 2009 standardized styles ======================================================================================*/
+
+.HelpText
+{
+	padding:0px 0px 10px 0px;
+	line-height:1.5em;
+}
+.HelpText b
+{
+	white-space:nowrap;
+}
+.HelpText ul
+{
+    padding:5px 0px 0px 20px;
+    margin:0px;
+}
+.HelpText li
+{
+    padding:0px 0px 3px 0px;
+    margin:0px;
+}
+
+
+
+.TabContainer
+{
+    margin:0px 3px 3px 0px;
+    padding:15px 0px 0px 0px;
+}
+.PageHeader
+{
+    padding:10px 10px 0px 10px;
+    font-size:14px;
+    font-weight:bold;
+}
+.AdminContentWrapper
+{
+    padding:10px;
+}
+.TestModeWarning
+{
+    background-color:LightCoral;
+    padding:0px 0px 10px 0px;
+	line-height:1.5em;
+}
+.bb_inline_warning
+{
+    background-color: #FFFFE5;
+    border: 1px solid #FFDE56;
+    display: block;
+    padding: 10px 15px;
+    line-height:1.5em;
+}
+
+
+/*==============================================
+ START step grouping styles
+----------------------------------------------*/
+.StepGrouping
+{
+	padding:0px 0px 30px 45px;
+	position:relative;
+	min-width:500px;
+}
+.StepGroupingHeading
+{
+	font-size:18px;	
+	font-family:Verdana,Arial,sans-serif;
+	font-style:italic;
+	padding:0px;
+	margin:0px 0px 2px 0px;
+}
+.StepGroupingNumber
+{
+	font-size:250%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:35px;
+	text-align:right;
+	color:#CCCCCC;
+	font-style:normal;
+}
+
+.SubGrouping
+{
+	padding:0px 0px 15px 0px;
+	position:relative;
+}
+.SubGroupingHeading
+{
+    font-size:14px;
+    font-family:Verdana,Arial,sans-serif;
+    font-weight:bold;
+	padding:0px;
+	margin:0px 0px 2px 0px;
+}
+
+
+
+/*==============================================
+ START configure screen step grouping styles
+----------------------------------------------*/
+.BBConfigStepSubGrouping
+{
+	padding:0px 0px 30px 5px;
+	color:#444444;	
+	font-size:12px;
+	margin-right:5px;
+}
+.BBConfigGroupingButton
+{
+	margin:5px 0px 15px 0px;
+}
+
+.BBConfigSubGrouping
+{   	padding:0px 0px 30px 5px;
+	margin-bottom:15px;
+	border-bottom:solid 1px #d7d7d7;
+}
+
+.BBConfigStepGroupingHeading
+{
+	font-size:18px;	
+	font-family:Verdana,Arial,sans-serif;
+	font-style:italic;
+	padding:0px;
+	margin:0px 0px 2px 0px;
+}
+.BBConfigStepGroupingNumber
+{
+	font-size:250%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:35px;
+	text-align:right;
+	color:#CCCCCC;
+	font-style:normal;
+}
+.BBConfigSubGroupingHeading
+{
+    font-size:14px;
+    font-family:Verdana,Arial,sans-serif;
+    font-weight:bold;
+	padding:0px;
+	margin:0px 0px 2px 0px;
+}
+
+
+
+/*==============================================
+ START configure screen step grouping styles for MultiSite 
+----------------------------------------------*/
+.BBPropsStepSubGrouping
+{
+	padding:0px 0px 8px 5px;
+	color:#444444;	
+	font-size:12px;
+	margin-right:5px;
+}
+
+.BBPropsStepGroupingHeading
+{
+	font-size:14px;	
+	font-family:Verdana,Arial,sans-serif;
+	font-style:italic;
+	padding:0px;
+	margin:0px 0px 2px 0px;
+}
+
+
+
+
+/*==============================================================
+ START grid styles
+--------------------------------------------------------------*/
+.GridContainer
+{
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	padding:0px 3px 4px 3px;
+	border:1px solid #A6B6C5;
+	background-color:#DEE9FD;
+	position:relative;
+}
+.GridTitle
+{
+    display:block;
+    font-size:12px; 
+    font-weight:bold;
+    border-top:1px solid #A6B6C5;
+    border-left:1px solid #A6B6C5;
+    border-right:1px solid #A6B6C5;
+	background-color:#DEE9FD;
+	margin:0px;
+	padding:0px 7px 0px 7px;
+	position:relative;
+	top:1px;
+	z-index:1;
+}
+.GridTitle span
+{
+    display:block;
+    border-bottom:1px dotted #A6B6C5;
+    padding:5px 0px 5px 0px;
+}
+.DataGridFooter
+{
+    
+}
+.DataGridFooter_add
+{
+    /* used to create a foe datagrid footer that isn't included
+       inside the GridContainer div. Useful for adding add buttons
+       to grids created by the datagrid*/
+    border-left:1px solid #A6B6C5;
+    border-right:1px solid #A6B6C5;
+    border-bottom:1px solid #A6B6C5;
+	background-color:#DEE9FD;
+	position:relative;
+	top:-11px;
+	padding:0px 0px 5px 0px;
+}
+.DataGridResults
+{
+    width:45%;
+    padding:5px 0px 0px 5px;
+    float:left;
+}
+.DataGridPagination
+{
+    width:45%;
+    padding:5px 5px 0px 5px;
+    float:right;
+    text-align:right;
+}
+table.DataGrid
+{
+	margin:0px 0px 0px 0px;
+	*margin:0px;
+	width:100%;
+}
+.DataGridItem
+{
+    background-color:#FFFFFF;
+}
+.LanguageGridItem
+{
+    background-color:#FFFFFF;
+}
+.DataGridItemIsSelectable
+{
+    cursor: pointer;
+}
+.DataGridItemInactive
+{
+    color:#999999;
+}
+.DataGridItemSelected
+{
+}
+.DataGridItemAlternating
+{
+	background-color:#F2F6FB;
+}
+.LanguageGridItemAlternating
+{
+	background-color:#F2F6FB;
+}
+.DataGridItemAlternating td, .DataGridItem td
+{
+    white-space:nowrap
+}
+.LanguageGridItemAlternating td, .LanguageGridItem td
+{
+    white-space:normal
+}
+.DataGridHeader
+{
+    background-color:#DEE9FD;
+}
+.DataGridHeader td, .DataGridHeader th
+{
+	padding:5px 5px 6px 5px;
+	border-bottom:1px solid #A6B6C5;
+}
+.DataGridSelected
+{
+	background-color: rgb(0, 0, 128);
+	color: rgb(255, 255, 255);
+}
+.DataGridItem.PendingFileRow
+{
+    background-color: #FFFEC8;
+}
+.DataGridItemAlternating.PendingFileRow
+{
+    background-color: #FFFEC8;
+}
+.DataGridSelected.PendingFileRow
+{
+	background-color: rgb(0, 0, 128);
+	color: rgb(255, 255, 255);
+}
+
+.DataGridItemCell
+{
+    padding:3px 5px 4px 5px;
+	border-bottom:1px solid #A6B6C5;
+}
+.DataGridItemCell input, .DataGridItemCell select
+{
+    margin:3px 0px 4px 0px;
+}
+.AdminGridSelectionCheckBox
+{
+    margin:0px 0px 0px 0px;
+}
+.DataGridItemCellLeft
+{
+    border-left:1px solid #A6B6C5;
+}
+.DataGridItemCellRight
+{
+    border-right:1px solid #A6B6C5;
+    padding:3px 20px 4px 5px;
+    text-align:left;
+}
+.DataGridItemCellCentered
+{
+    text-align:center;
+}
+.DataGridItemCellHidden
+{
+    display:none;
+}
+
+
+.DynamicDataGridHeader
+{
+   position:relative; 
+   border-bottom:1px solid #A6B6C5;
+   padding:0px 20px 0px 0px;
+}
+.DynamicDataGridHeader table
+{
+    width:100%;
+}
+.DataGridHeaderColumn
+{
+    padding:4px 5px 5px 5px;
+}
+
+.GridScroller .DataGrid thead
+{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    left:-10px;
+    top:-10px;
+    *display:none;
+}
+.GridScrollerOverflow
+{
+    border-bottom:1px solid #A6B6C5;
+}
+.GridScroller
+{
+    position:relative;
+    padding:0px 1px 0px 1px;
+    *padding:0px;
+}
+.GridScrollableContent
+{
+    position:relative;
+}
+
+/*==============================================
+ START list builder styles
+----------------------------------------------*/
+.ListAddition
+{
+	position:relative;
+	background-color:#EEF6FF;
+	border:1px solid #CCCCCC;
+	padding:0px 10px 5px 10px;
+	margin:15px 0px 2px 0px;
+}
+.ListAdditionContent
+{
+	border-bottom:1px solid #CCCCCC;
+	padding:7px 0px 5px 0px;
+}
+.ListAdditionButton
+{
+	padding:7px 0px 2px 0px;
+	position:relative;
+}
+.ListAdditionArrow
+{
+	position:absolute;
+	top:-12px;
+	left:25px;	
+}
+/*--------------------------------------------------------------
+ END grid styles
+==============================================================*/
+
+
+
+
+
+.FieldRowDivider
+{
+	padding:0px 0px 10px 0px;
+    margin:10px 0px 0px 0px;
+    border-top:1px dotted #CCCCCC;
+}
+
+
+/*==============================================================
+ START SingleFieldRow styles
+ Used to handle fields that span an entire row with - often
+ making use of help text to the right of the field.
+--------------------------------------------------------------*/
+.SingleFieldRow
+{
+	position:relative;
+	overflow:hidden;
+	padding:0px 0px 10px 0px;
+}
+.SingleFieldRow Field
+{
+    width:33%;
+	float:left;
+}
+.SingleFieldRow .FieldContent
+{
+    padding:0px 10px 0px 0px;
+}
+
+/*==============================================================
+ START FieldHelp styles (SingleFieldRow sub-element)
+--------------------------------------------------------------*/
+.FieldHelp
+{
+	float:left;
+	width:67%;	
+	color:#666666;
+}
+.FieldHelpInterior{
+	padding:10px 15px 10px 15px;
+	margin:10px 0px 0px 25px;
+	position:relative;
+	background-color:#FAF5C2;
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	min-height:20px;
+	line-height:1.5em;
+	color:#666666;
+}
+/* .FieldHelpOverlay - used to overlap functional content 
+    placed in help content; use sparingly */
+.FieldHelpOverlay 
+{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#FFFFFF;
+	filter: alpha(opacity=30); 
+	opacity: 0.3; 
+	-moz-opacity: 0.3;
+}
+.FieldHelpArrow
+{
+	position:absolute;
+	top:7px;
+	left:-12px;
+}
+.FieldHelpText
+{
+    height:inherit;
+    vertical-align:middle;
+}
+.FieldErrorText
+{
+    height:inherit;
+    vertical-align:middle;
+    padding:0px 0px 10px 0px;
+    font-weight:bold;
+    color:#FF0000;
+}
+
+
+
+
+
+/*==============================================
+ START checkbox styles
+----------------------------------------------*/
+.CheckboxOptionContainer
+{
+    position:relative;
+	padding:0px 0px 10px 0px;
+}
+.CheckboxOption
+{
+	border:1px solid #CCCCCC;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	background-color:#F7FBFF;
+}
+.CheckboxOptionSelected
+{
+	background-color:#EEF6FF;
+}
+.CheckboxOptionField
+{
+	width:33%;
+	padding:5px 10px 5px 0px;
+	white-space:nowrap;
+}
+.CheckboxOptionHelp
+{
+    position:relative;
+	color:#666666;
+	padding:0px 10px 0px 11px;	
+	background-color:#FFFFFF;		
+}
+.CheckboxOptionHelpArrow
+{
+	text-align:right;
+	padding:0px 0px 0px 13px;
+	width:12px;
+	border-right:1px solid #CCCCCC;
+}
+.CheckboxOptionHelpArrow img
+{
+   position:relative;
+   left:1px;
+}
+.CheckboxOptionHelpText
+{
+    display:block;   
+	padding:9px 0px 7px 5px;
+	line-height:1.5em;
+}
+.SubOptionContainer
+{
+	position:relative;
+	background-color:#FFFFFF;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	padding:10px 10px 0px 10px;
+	margin:0px 0px 5px 20px;
+}
+/*--------------------------------------------------------------
+ END vertical option styles
+==============================================================*/
+
+
+/*==============================================
+ START checkbox list styles
+----------------------------------------------*/
+.CheckBoxContainer
+{
+    border:1px solid #BBBBBB;
+    background-color:#FFFFFF;     
+}
+.CheckBoxContainerButtons
+{
+    border-left:1px solid #BBBBBB;
+    border-right:1px solid #BBBBBB;
+    border-bottom:1px solid #BBBBBB;
+    padding:5px 7px 5px 7px;
+    background-color:#FFFFFF;
+}
+
+
+/*==============================================
+ START radio container styles
+----------------------------------------------*/
+.RadioContainer
+{
+	overflow:auto; 
+}
+	
+.RadioGrouping
+{
+	width:250px;
+	float:left;
+	
+	position:relative;
+	left:1px;
+}
+.RadioGrouping p
+{
+	margin:0px;
+	padding:3px;
+	font-size:95%;
+}
+.RadioGrouping table
+{
+    padding:0px;
+    margin:0px;
+    position:relative;
+
+}
+.RadioGrouping td
+{
+	margin:0px;
+	padding:3px;
+	font-size:95%;
+	width:250px;
+}
+.RadioGrouping .RadioSelected
+{
+	padding:2px; 
+	background-color:#EEF6FF;
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+}
+
+.SelectedArea
+{
+	font-size:95%;
+	background-color:#EEF6FF;
+	min-height:60px;
+	padding:0px 0px 0px 5px;
+	margin:0px 0px 10px 249px;
+	overflow:auto;
+	border:1px solid #CCCCCC;
+}
+.SelectedDescription
+{
+	margin-top:0px;
+	margin-bottom:3px; 
+}
+
+.RadioGroupingNarrow
+{
+	width:150px;
+	float:left;
+	position:relative;
+	left:1px;
+}
+.RadioGroupingNarrow p
+{
+	margin:0px;
+	padding:3px;
+	font-size:95%;
+}
+.RadioGroupingNarrow table
+{
+    padding:0px;
+    margin:0px;
+    position:relative;
+
+}
+.RadioGroupingNarrow td
+{
+	margin:0px;
+	padding:3px;
+	font-size:95%;
+	width:150px;
+}
+.RadioGroupingNarrow .RadioSelected
+{
+	padding:2px; 
+	background-color:#EEF6FF;
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+}
+.SelectedAreaNarrow
+{
+	font-size:95%;
+	background-color:#EEF6FF;
+	padding:0px 0px 0px 5px;
+	overflow:auto;
+	border:1px solid #CCCCCC;
+}
+.SelectedAreaInner
+{
+	border-left:1px solid #CCCCCC;
+	background-color:#F7FBFF;
+	padding:10px 10px 10px 10px;
+	min-height:60px;
+}
+.SelectedAreaInactivePanel
+{
+	display:none;
+}
+
+
+
+/*==============================================
+ START radio container styles
+----------------------------------------------*/
+.RadioContainerHorizontal
+{
+
+}
+	
+.RadioGroupingHorizontal
+{
+    /* ie hack: fixes extra space between tabs 
+    and content in some instances */
+    border-top:1px solid #FFFFFF;
+}
+.RadioGroupingHorizontal p
+{
+    display:block;
+	margin:0px;
+	padding:4px 15px 3px 6px;
+	font-size:95%;	
+	position:relative;
+	top:1px;
+	float:left;
+}
+.RadioGroupingHorizontal .RadioSelected
+{
+	background-color:#EEF6FF;
+	padding:3px 14px 3px 5px;
+	border-right:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+}
+
+.SelectedAreaHorizontal
+{
+	font-size:95%;
+	background-color:#EEF6FF;
+	padding:5px 0px 5px 0px;
+	margin:0px 0px 10px 0px;
+	overflow:auto;
+	border:1px solid #CCCCCC;
+}
+.SelectedAreaHorizontalInner
+{
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	background-color:#FFFFFF;
+	padding:10px 10px 10px 10px;
+	position:relative;
+	min-height:50px;
+}
+
+
+
+/*==============================================================
+ START fields
+ general classes for select & text inputs
+--------------------------------------------------------------*/
+.FieldSetRow_1 .FieldSetColumn
+{
+    padding:0px;
+    width:100%;
+}
+.FieldSetRow_2uneven .FieldSetColumnFirst{
+	width:33%;
+}
+.FieldSetRow_2uneven .FieldSetColumnLast{
+	width:66%;
+}
+.FieldSetRow_2 .FieldSetColumn{
+	width:49%;
+}
+.FieldSetRow_3 .FieldSetColumn{
+	width:32%;
+}
+.FieldSetRow_4 .FieldSetColumn{
+	width:24%;
+}
+
+.FieldSetRow_5 .FieldSetColumn
+{
+    width:19%;
+}
+
+.FieldSetRow_6 .FieldSetColumn
+{
+    width:16%;
+}
+
+.FieldSetRow_7 .FieldSetColumn
+{
+    width:13%;
+}
+
+.FieldSetColumn{
+	float:left;
+}
+
+.FieldSetColumnLast
+{
+    float:right;
+}
+.Field{
+	padding:0px 0px 10px 0px;
+}
+.FieldSetColumnFirst .Field{
+    padding:0px 12px 10px 0px;
+}
+.FieldSetColumnLast .Field{
+    padding:0px 0px 10px 12px;
+}
+.FieldBubbles{
+	width:100%;
+}
+.FieldBubble_warning{
+	position:relative;
+	background-color:#FCE0A7;
+	color:#371C00;
+	padding:7px 10px 7px 10px;
+	margin:0px 0px 8px 0px;
+	line-height:16px;	
+	float:right;
+}
+.FieldBubble_warning a{
+	position:relative;
+	z-index:1;
+}
+.FieldBubble_help{
+	position:relative;
+	background-color:#d8e3f6;
+	color:#15305e;
+	padding:7px 10px 7px 10px;
+	margin:0px 0px 8px 0px;
+	line-height:16px;
+	float:right;
+}
+.FieldBubble_help a{
+	position:relative;
+	z-index:1;
+}
+.FieldBubbleHeader{
+	font-weight:bold;
+}
+.FieldBubbleHeaderLabel{
+	display:block;
+	float:left;
+}
+.FieldBubbleHeaderClose{
+	display:block;
+	float:right;
+	position:relative;
+	left:3px;
+}
+.FieldBubbleHeaderClose img{
+	border:none;
+}
+.FieldBubbleMore{
+	padding:5px 0px 0px 0px;
+}
+.FieldBubblePointer{
+	position:absolute;
+	bottom:-14px;
+	right:8px;
+}
+.FieldHeading{
+	position:relative;
+	padding:0px 0px 2px 0px;
+	clear:both;
+}
+.FieldRequired{
+	display:block;
+	float:left;
+	color:#FF0000;
+	padding:5px 4px 0px 0px;
+	font-weight:bold;
+	font-size:14px;
+	height:12px;
+}
+.FieldLabel{
+	display:block;
+	float:left;
+	color:#232323;
+	padding:5px 0px 1px 0px;
+}
+.FieldAsterisk
+{
+    color:#FF0000;
+	font-weight:bold;
+	font-size:14px;
+}
+.FieldHelpLink{
+	display:block;
+	float:right;
+}
+.FieldWarningLink{
+	display:block;
+	float:right;
+}
+.FieldContent{
+	clear:both;
+}
+.FieldContentText
+{
+    padding:0px 2px 0px 0px;
+    *padding:0px 4px 0px 0px;
+}
+.FieldInput{
+	width:100%;
+	border:1px solid #AAAAAA;	
+}
+.FieldInputTiny{
+	width:24px; 	
+}
+.FieldInputSmall{
+	width:120px; 	
+}
+/* Added widths for Bug #118994: IE 7/ ADMINISTRATION/ Web Services/Text box 
+for specific user is cut off in IE 7*/
+.FieldInputMedium{
+    max-width: 175px;
+    min-width: 175px;
+    width:175px;
+
+}
+ .FieldInputPicker
+    {
+        border: none 0px;
+        margin: -1px;
+        padding: 0px;
+        background-color: Transparent;
+        border-collapse: collapse;
+        
+    }
+input.FieldError
+{
+    background-color:#FFEEEE;
+}
+input.FieldActive
+{
+    background-color:#F7FAFF;
+}
+.FieldInputDisabled
+{
+    display:block;
+    margin:1px 0px 0px 0px;
+    padding:2px 2px 2px 2px;
+    border:1px solid #AAAAAA;
+    background-color:#F7F7F7;
+    color:#999999;
+    cursor:default;
+}
+.FieldInputDisabled input
+{
+    background-color:Transparent;
+    border:none;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+.FieldExample{
+	padding:1px 0px 0px 0px;
+	font-style:italic;
+	color:#666666;
+}
+/*--------------------------------------------------------------
+ END fields
+==============================================================*/
+
+
+
+/*==============================================================
+ START FormButton styles
+ not yet used, intended for styling link buttons to replace 
+ command buttons
+--------------------------------------------------------------*/
+.FormButton
+{
+    position:relative;
+    float:left;
+    display:block;     
+    text-decoration:none;  
+    cursor:pointer; 
+}
+.FormButton img
+{
+    border:none;
+}
+.FormButtonLeft
+{
+    overflow:hidden;
+    display:block;
+    float:left;
+    height:25px;
+    position:relative;
+}
+.FormButtonLeftBG
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.FormButtonLeftHover
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.FormButtonIcon
+{
+    display:block;
+    float:left;
+    padding:2px 0px 2px 5px;
+    position:relative;
+}
+.FormButtonText
+{
+    display:block;
+    float:left;
+    color:#444444;
+    font-size:11px;
+    padding:6px 5px 0px 5px;
+    border:0px;
+    position:relative;
+}
+.FormButtonRight
+{
+    display:block;
+    float:left;
+    width:4px;
+    height:25px;
+    position:relative;
+}
+.FormButtonRight img
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+/*--------------------------------------------------------------
+ END FormButton styles
+==============================================================*/
+
+/*==============================================
+ START admin page designer
+----------------------------------------------*/
+.AdminPageDesignerFrame
+{
+	width:100%;
+	border-left:none;
+	border-right:none;
+	border-top:1px solid #CCCCCC;
+	overflow:hidden;
+}
+
+/*==============================================
+START VerticalTabGrouping
+----------------------------------------------*/
+.VerticalTabGrouping
+{
+   	width:250px;
+	float:left;
+	position:relative;
+	left:1px;
+	display:block;
+	padding:0px;
+	margin:0px;
+}
+.VerticalTabGrouping li
+{
+    display:block;
+    padding:0px;
+    margin:0px;
+}
+.VerticalTabGrouping a
+{
+   	display:block;
+   	margin:0px;
+	padding:5px 5px 5px 5px;
+	font-size:12px;
+	text-decoration:none;
+	color:#444444;
+}
+a.VerticalTabSelected
+{
+    padding:4px 4px 4px 4px;
+	background-color:#EEF6FF;
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+	outline:none;
+}
+
+
+
+
+
+
+
+/*==============================================
+START InlineModal
+----------------------------------------------*/
+.InlineModal
+{
+}
+.InlineModalHeader
+{
+    height:30px;
+    overflow:hidden;
+    position:relative;
+}
+.InlineModalTitle
+{
+    position:relative;
+    font-weight:bold;
+    color:#000000;
+    margin:8px 10px 0px 10px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.InlineModalBody
+{
+    border-left:1px solid #444444;
+    border-right:1px solid #444444;
+    padding:5px 10px 5px 10px;
+    background-color:#FFFFFF;
+    position:relative;
+}
+.InlineModalBodyInner
+{
+    text-align:center;
+}
+.InlineModalFooter
+{
+    height:30px;
+    overflow:hidden;
+    position:relative;
+}
+.InlineModalFooterText
+{
+    display:block;
+    position:relative;
+    padding:7px 0px 0px 10px;
+}
+
+
+/* BBPopupModalExtender needs this */
+.BBModalBackground 
+{
+     sbackground-color: #666666; 
+     background-color: gray; 
+     filter: alpha(opacity=60); 
+     opacity: 0.6; 
+     -moz-opacity: 0.6;
+}
+
+
+/*==============================================
+ START SearchField styles
+----------------------------------------------*/
+.SearchFieldContainer
+{
+    position:relative;
+    
+}
+.SearchFieldContainerRequired
+{
+    position:relative;
+    padding:0px 12px 0px 0px;
+}
+.SearchFieldBox
+{
+    border:1px solid #AAAAAA;
+    position:relative;
+    min-height:18px;
+}
+.SearchField
+{
+    display:block;    
+    position:relative;
+    min-height:18px;    
+    padding:1px;
+    text-decoration:none;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+.SearchField:hover
+{
+    background-color:#F2F6FB;
+}
+
+/* gets appended to SearchField to add in space for the remove button */
+.SearchFieldRemovable
+{
+    margin:0px 20px 0px 0px;
+}
+
+.SearchFieldText
+{
+    display:block;
+    padding:2px 25px 2px 25px;
+    font-size:12px;
+}
+.SearchFieldTextOnly
+{
+    display:block;
+    padding:2px 25px 2px 2px;
+    font-size:12px;
+}
+.SearchFieldButton
+{
+    position:absolute;
+    top:50%;
+    right:0px;
+    cursor:pointer;
+}
+.SearchFieldButton img
+{
+    position:absolute;
+    top:-9px;
+    right:1px;
+    border:0px;
+}
+.SearchFieldIcon
+{
+    position:absolute;
+    top:50%;
+    left:0px;
+}
+.SearchFieldIcon img
+{
+    position:absolute;
+    top:-8px;
+    left:3px;
+    border:0px;
+}
+.SearchFieldAction
+{
+    position:absolute;
+    top:50%;
+    right:1px; 
+    width:18px;
+}
+.SearchFieldAction img
+{
+    position:absolute;
+    top:-9px;
+    border:0px; 
+    left:0px;
+}
+.SearchFieldRequired
+{
+    display:block;
+    position:absolute;
+    right:1px;
+    top:4px;
+    color:#EE0000;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/*==============================================
+ START IconField
+----------------------------------------------*/
+.IconField
+{
+    display:block;
+    padding:1px;
+    position:relative;
+    min-height:18px;
+    text-decoration:none;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+.IconField:hover
+{
+    background-color:#F2F6FB;
+}
+/* gets appended to SearchField to add in space for the remove button */
+.IconFieldRemovable
+{
+    margin:0px 20px 0px 0px;
+}
+.IconFieldBox
+{
+    border:1px solid #AAAAAA;
+    position:relative;
+    min-height:18px;
+}
+.IconFieldText
+{
+    display:block;
+    padding:2px 25px 2px 10px;
+    font-size:12px;
+}
+.IconFieldButton
+{
+    position:absolute;
+    top:50%;
+    right:0px;
+}
+.IconFieldButton img
+{
+    position:absolute;
+    top:-9px;
+    right:1px;
+    border:0px;
+    border:none;
+}
+.IconFieldImage
+{
+    display:block;
+    float:left;
+    padding:1px 10px 1px 1px;
+    margin:0px;
+    width:25px;
+    text-align:center;
+}
+.IconFieldImage img
+{
+    border:none;
+}
+.IconFieldAction
+{
+    position:absolute;
+    top:50%;
+    right:1px; 
+    width:18px;
+}
+.IconFieldAction img
+{
+    position:absolute;
+    top:-9px;
+    border:0px; 
+}
+
+
+/*==============================================
+START Explorer Classes
+----------------------------------------------*/
+.ExplorerContainer 
+{
+    min-height:650px;
+    position:relative;
+}
+.ExplorerTabs 
+{
+    width:215px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:5;
+    *z-index:0;
+}
+.ExplorerContent
+{
+    margin:0px 0px 0px 230px;
+}
+.ExplorerPath
+{
+    border-top:1px solid #A6B6C5;
+    border-left:1px solid #A6B6C5;
+    border-right:1px solid #A6B6C5;
+    padding:2px 5px 1px 5px;
+}
+.ExplorerPath span
+{
+    position:relative;
+    top:-2px; 
+}
+.ExplorerTabBody
+{
+    border:1px solid #A6B6C5;
+    margin:0px 3px 0px 0px;
+    background-color:#FFFFFF;
+    padding:8px 7px 8px 7px;
+    height:556px;
+}
+/* .FolderTreeWrapper
+{
+    height:572px !Important;
+} */
+.FolderTreeWrapper .FolderTreeButtons
+{
+    height:20px;
+    background-color:#E0EAF6;
+    text-align:right;
+    padding:0px 6px 0px 6px;
+}
+.FolderTreeWrapper .FolderTree
+{
+    height:552px;    
+    border:1px solid #A6B6C5;
+    margin:0px 3px 3px 0px;
+    background-color:#FFFFFF;
+}
+.FolderTreeContent div
+{
+    height:auto !Important;
+}
+.ExplorerLeafContainer .GridScroller
+{
+    max-height:200px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.ExplorerLeafTabContent
+{
+    border:1px solid #A6B6C5;
+    padding:5px;
+    margin:0px 3px 0px 0px;
+    background-color:#FFFFFF;
+    height:261px
+}
+.ExplorerLeafTabFrame
+{
+    margin:0px 3px 0px 0px;
+    height:271px;
+    background-color:#FFFFFF;
+    border:1px solid #A6B6C5;
+    position:relative;
+}
+.PreviewOverlay
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:95%;
+    height:95%;
+}
+.ThumbGallery
+{
+	margin:0px 0px 10px 0px;
+	padding:4px;
+	border:1px solid #A6B6C5;
+	background-color:#DEE9FD;
+	position:relative;
+}
+.ThumbGalleryContent
+{
+    background-color:#FFFFFF;
+    border:1px solid #A6B6C5;
+    margin:0px;
+    min-height:544px;
+}
+.InlineModalBody
+{
+    overflow:auto;
+}
+
+
+
+
+
+
+
+.TabOpenWrapper
+{
+    position:relative;
+    padding:0px;
+    margin:0px 5px 0px 5px;
+}
+.TabOpen
+{
+    position:relative;
+    z-index:2;
+}
+.TabOpenBorder
+{
+    position:absolute;
+    margin-top:21px;
+    left:-5px;
+    right:-5px;
+    height:3px;
+    *height:3px;
+    background-color:#E0EAF6;
+    
+    border:1px solid #A6B6C5;
+    z-index:1;
+}
+
+.DoubleTabOpenBorder
+{
+    border-bottom:1px solid rgb(166, 182, 197);
+    position:absolute;
+    margin-top:25px;
+    left:-5px;
+    right:-5px;
+    height:1px;
+    *height:1px;  
+    z-index:1;
+            
+}
+
+/* Fixes IE bug were subcontent of IG webtab disappears on 
+rolling over another tab */
+.IGTabWrapper table{
+    position:relative;
+}
+
+
+
+
+
+.BBAdminSingleVerbButton
+{
+    position:relative;
+}
+/* START TIM ADDITIONS ------------------------------------------------------------------------------ */
+
+/*==============================================
+ START warning message styles
+----------------------------------------------*/
+.WarningContainer
+{
+	background-color:#ffffce;
+	color:Black;
+	padding:5px;
+	border:1pt solid #c0c0c0;
+	font-size:8pt;
+	position:relative;
+}
+.WarningImage
+{
+	float:left;
+}
+.WarningText
+{
+	line-height: 125%;
+	margin: 5px 0 0 50px;
+}
+
+
+/*==============================================
+ START survey styles
+----------------------------------------------*/
+
+.SurveySample
+{
+	float:left;
+}
+.SurveySampleText
+{
+	float:left;
+	width:60px;
+}
+.SurveyAnsColDDs
+{
+	overflow-x:auto;
+}
+
+
+/*==============================================
+ START simple radio button styles
+----------------------------------------------*/
+
+.SimpleRadioContainer
+{
+	padding:10px 0px 10px 0px;
+}
+.RadioHeading
+{
+	padding:0px 0px 5px 0px;
+}
+.RadioContent
+{
+    clear:both;
+}
+
+/*MSB Bug 71189 This style breaks IE7 and isnt needed anymore
+.RadioOption
+{
+	padding:2px 0px 2px 20px;
+	text-indent:-20px;
+}
+*/
+
+
+
+
+/*==============================================
+ Applies to all bolded words in helptext
+----------------------------------------------*/
+.HelpTextItem
+{
+    font-weight:bold;
+}
+
+
+/*==============================================
+ moved these styles from the eCards part editor
+----------------------------------------------*/
+.CategoryExpander
+{
+    cursor:hand;
+    cursor:pointer;
+    padding:2px;
+}
+.NoTemplates
+{
+    padding:2px;
+}
+.TemplateItem
+{
+    border:solid 1px buttonface;
+    margin:5px;
+    display:inline;
+    float:left;
+}
+.TemplateName
+{
+    color:black;
+    font-size:8pt;
+}
+.TemplateImage
+{
+    cursor:hand;
+	cursor:pointer;
+    vertical-align:middle;
+    text-align:center;
+}
+.TemplatesForCategory
+{
+    margin-left:10px;
+}
+.SelectAllNoneLinks
+{
+    margin:5px;
+}
+
+/* END TIM ADDITIONS ------------------------------------------------------------------------------ */
+
+/*==============================================
+ START ContentTypeSelector (grouped part type select menu on new part dialog) styles
+----------------------------------------------*/
+
+.PartDropDown{
+	position:relative;
+	z-index:9999;
+}
+.PartDropDown img{
+	border:none;	
+}
+.PartDropDownField{
+	display:block;
+	border:1px solid #999999;
+	position:relative;
+	text-decoration:none;
+	font-size:12px;
+	color:#000000;
+}
+.PartDropDownFieldSelected
+{
+    background-color:#F7FBFF;
+}
+.PartDropDownField:hover{
+	background-color:#F7FBFF;
+}
+.PartDropDownText{
+	display:block;
+	padding:2px 25px 2px 5px;
+	min-height:16px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.PartDropDownButton{
+	position:absolute;
+	right:1px;
+	top:50%;
+}
+.PartDropDownButton img{
+	position:absolute;
+	top:-9px;
+	right:0px;
+}
+.PartDropDownHit{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:20px;
+}
+.PartDropDownMenu{
+	position:absolute;
+	top:21px;
+	left:0px;
+	width:425px;
+	border:1px solid #999999;
+	background-color:#FFFFFF;
+}
+.PartDropDownColumnLeft{
+	width:224px;
+	border-right:1px solid #CCCCCC;
+	float:left;
+}
+.PartDropDownColumnRight{
+	width:200px;
+	float:left;
+	overflow:hidden;
+}
+.PartDropDownColumnHeader{
+	display:block;
+	padding:3px 5px 3px 5px;
+	margin:0px;
+	font-weight:bold;
+	background-color:#F7FBFF;
+	border-bottom:1px solid #CCCCCC;
+	font-size:12px;
+}
+.PartDropDownAlphabetical{
+	display:block;
+	padding:0px;
+	margin:0px;
+	height:250px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.PartDropDownAlphabetical li{
+	display:block;
+	padding:0px;
+	margin:0px;
+}
+.PartDropDownAlphabetical a{
+	display:block;
+	padding:2px 5px 2px 5px;
+	margin:0px;
+	background-color:#FFFFFF;
+	color:#000000;
+	text-decoration:none;
+}
+.PartDropDownItemSelected a{
+	background-color:#EEF6FF;
+}
+.PartDropDownItemSelected{
+	background-color:#EEF6FF;
+}
+
+.PartDropDownCategories{
+	display:block;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	width:200px;
+	height:250px;
+	border-right:1px dotted #CCCCCC;
+}
+.PartDropDownCategories li{
+	display:block;
+	padding:0px;
+	margin:0px;
+}
+.PartDropDownCategoryHeader{
+	display:block;
+	padding:5px 25px 5px 5px;
+	margin:0px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000000;
+	position:relative;
+}
+.PartDropDownCategoryHeader img{
+	position:absolute;
+	top:3px;
+	right:5px;
+}
+.PartDrownCategoryGroup{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:201px;
+	height:250px;
+	width:224px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:0px;
+	margin:0px;
+}
+.PartDrownCategoryGroup a{
+	display:block;
+	padding:2px 5px 2px 5px;
+	color:#000000;
+	text-decoration:none;
+}
+.PartDrownCategoryGroup a:hover{
+	background-color:#EEF6FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================================================================================================
+  START: Deprecated class names, should be removed when all refrences to the class are removed
+*------------------------------------------------------------------------------------------------------------------------*/
+/* VerticalOption is deprecated in favor of SingleFieldRow */
+.VerticalOption
+{
+	position:relative;
+	overflow:hidden;
+	padding:0px 0px 10px 0px;
+}
+/* VerticalDivider is deprecated in favor of FieldRowDivider */
+.VerticalDivider
+{
+    padding:0px 0px 10px 0px;
+    margin:10px 0px 0px 0px;
+    border-top:1px dotted #CCCCCC;
+}
+
+
+/*==============================================
+ START language standard styles
+----------------------------------------------*/
+.BBProductName
+{
+    font-style:italic;
+    font-weight:bold;
+    display:inline;
+}
+.3rdPartyProductName /* e.g., "Infragestics" */
+{
+	display:inline;
+}
+.BBNCSectionName /* e.g., "Stylesheet Manager", "Site Settings"*/
+{
+    font-style:italic;
+    display:inline;
+}
+.BBNCPartName
+{
+}
+.BBFormFieldName
+{
+    font-weight:bold;
+}
+
+/*==============================================
+ START select option styles
+----------------------------------------------*/
+.SelectOption .FieldContent
+{
+    padding:0px 10px 0px 0px;
+}
+.SelectOptionField
+{
+	width:33%;
+	float:left;
+}
+.SelectOptionHelp
+{
+	float:left;
+	width:67%;	
+	color:#666666;
+}
+.SelectOptionHelpInterior{
+	padding:10px 15px 10px 15px;
+	margin:10px 0px 0px 25px;
+	position:relative;
+	background-color:#FAF5C2;
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	min-height:20px;
+	line-height:1.5em;
+	color:#666666;
+}
+.SelectOptionHelpOverlay
+{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#FFFFFF;
+	filter: alpha(opacity=30); 
+	opacity: 0.3; 
+	-moz-opacity: 0.3;
+}
+.SelectOptionHelpArrow
+{
+	position:absolute;
+	top:7px;
+	left:-12px;
+}
+.SelectOptionHelpText
+{
+    height:inherit;
+    vertical-align:middle;
+    color: #666666;
+}
+
+/* BBAccumulator Listbox -------------------------
+----------------- Starts  -------------------------- */
+
+.BBAccumulatorListboxContainer {
+width:auto;
+}
+.BBAccumulatorListboxStructure{
+width:auto;
+}
+.BBAccumulatorListboxAvailableSet, .BBAccumulatorListboxSelectedSet{
+width:35%;
+background-color:#DCEBFE;
+border:solid 1px #A6B6C5;
+padding:4px;
+}
+
+.BBAccumulatorListboxAvailableSet .FieldLabel, .BBAccumulatorListboxSelectedSet .FieldLabel{
+width:100%;
+}
+
+.BBAccumulatorListboxAvailableSet div, .BBAccumulatorListboxSelectedSet div{
+display:block;
+width:auto;
+height:100%;
+min-height:110px;
+background-color:#FFFFFF;
+border:solid 1px #A6B6C5;
+padding:6px;
+margin:0;
+}
+.BBAccumulatorListboxButtonsContainer{
+width:25%;
+padding:15px;
+text-align:center;
+}
+
+.BBAccumulatorListboxButtons{
+float:left;
+clear:none;
+margin:4px auto 4px auto;
+width:120px;
+}
+
+
+/* BBAccumulator Listbox -------------------------
+----------------- Ends  -------------------------- */
+
+
+/* Clearfix -------------------------
+----------------- starts  -------------------------- */
+
+.ui-helper-clearfix:after
+	{
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	.ui-helper-clearfix
+	{
+		display: inline-block;
+	}
+	/* required comment for clearfix to work in Opera \*/* html .ui-helper-clearfix
+	{
+		height: 1%;
+	}
+	.ui-helper-clearfix
+	{
+		display: block;
+	}
+/* Clearfix -------------------------
+----------------- starts  -------------------------- */
+
+
+/* Disappearing content hack -------------------------
+----------------- starts  -------------------------- */
+
+div, label, input, select { zoom:1;} 
+
+
+/* Disappearing content hack -------------------------
+----------------- ends  -------------------------- */
+
+
+
+/* OA formbuilder edit -------------------------
+----------------- starts  -------------------------- */
+#formbuilder {clear:left}
+/* OA formbuilder edit -------------------------
+----------------- ends  -------------------------- */
+
+
+/* Fix for bug 74777 - conditional content text too light
+----------------- starts  -------------------------- */
+.BBAdminViewMessageCheckboxListContainer .DataGridHeader .CCHeader
+{
+    color: #333333;
+}
+/* Bug fix 74777 ------------------------------------
+----------------- ends  -------------------------- */
+
+/* Fix for bug 80230 mixed content warnings wherever JQuery Lightbox is used */
+a#fancy_left, a#fancy_right 
+{
+	background-image: url(../../../images/1x1.gif) !Important;
+}
+/* Bug fix for 80230 ends */
+
+/* Multi site selector tree add-on */
+.tree-default li a.clicked:after {
+   content:  "\2713 ";
+}
+/* Multi site selector tree add-on */
+
+
+/* Bug #102077: Online Admissions,IE browser,Multi-checklist,listboxes change sizes when adding/removing items from them */
+
+.BBAccumulatorListboxStructure .FieldInput {
+width:auto;
+
+}
+
+.BBAccumulatorListboxContainer .FieldInput {
+min-width:220px !important;
+max-width:600px;
+
+}
+
+.BBAccumulatorListboxContainer .BBAccumulatorListboxAvailableSet select {
+width:200px;
+}
+
+.BBAccumulatorListboxContainer .BBAccumulatorListboxSelectedSet select {
+width:200px;
+}
+
+.BBAccumulatorOrderableButtons {
+margin:4px auto; 
+}
+
+/* Bug #102077: Online Admissions,IE browser,Multi-checklist,listboxes change sizes when adding/removing items from them */
+
+
+/* New pager styles */
+.BBPager {margin:3px; color:Black; text-decoration:none;}
+
+.BBPager a { color:Black; text-decoration:none;}
+
+.BBPagerPageLink { border:1px solid #A6B6C5; padding:4px; margin:3px;}
+
+.BBPagerPageLink:hover {background-color:#FFF4CC;}
+
+.BBPagerSeparator {padding:4px; margin:3px;}
+
+.BBPagerPageSelectedLink { padding:4px; margin:3px;}
+
+.BBPagerPrevPageLink {border:1px solid #A6B6C5; padding:4px; margin:3px;}
+
+.BBPagerPrevPageLink:hover { background-color:#FFF4CC; }
+
+.BBPagerNextPageLink {border:1px solid #A6B6C5; padding:4px; margin:3px;}
+
+.BBPagerNextPageLink:hover { background-color:#FFF4CC; }
+
+/* New pager styles */
+
+
+/* Supported Languages */ 
+
+    .ui-menu-item a
+    {
+        cursor: pointer;
+    }
+    .ui-autocomplete
+    {
+        max-height: 300px;
+        max-width: 300px;
+        overflow: auto;
+    }
+    .addLanguage
+    {
+        cursor: pointer;
+    }
+    .selectedLanguages
+    {
+        border: 1px solid black;
+        max-height: 300px;
+        min-height:155px;
+        height:155px;
+        overflow: auto;
+        width: 70%;
+        margin: 4px 0px 12px 0px;
+    }
+    .selectedLanguages li
+    {
+        border-bottom: 1px solid black;
+        clear: left;
+        display: block;
+        line-height: 24px;
+        height: 24px;
+    }
+     .selectedLanguages li:nth-child(odd)
+    {
+        background-color:#F1F1F1;
+    }
+    
+    .addLanguageWrapper {width:70%; text-align:right; vertical-align:middle; }
+    .dropDownButton {vertical-align:middle;}
+    input.language {padding:0px; vertical-align:middle;}
+    .defaultLanguage {margin:8px 0px 8px 0px;}
+    
+    .languageDescription
+    {
+        display: block;
+        float: left;
+        padding-left: 4px;
+        width: 65%;
+    }
+    .languageName
+    {
+        display: block;
+        float: left;
+        width: 30%;
+    }
+    .removeButton
+    {
+        background-image: url(<%=Page.ResolveUrl("~/images/delete_16.gif")%>);
+        display: block;
+        float: right;
+        height: 16px;
+        margin-top: 2px;
+        margin-right: 3px;
+        text-align: right;
+        width: 16px;
+    }
+
+/* Supported Lanaguages end */ 
+
+/* Supported SiteURLs */ 
+    .selectedURLs
+    {
+        border: 1px solid black;
+        max-height: 300px;
+        min-height:155px;
+        height:155px;
+        overflow: auto;
+        width: 100%;
+        margin: 4px 0px 12px 0px;
+    }
+    .selectedURLs li
+    {        
+        border-bottom: 1px solid black;
+        clear: left;
+        display: block;
+        line-height: 24px;
+        height: 24px;
+    }  
+     .selectedURLs li:nth-child(odd)
+    {
+        background-color:#F1F1F1;
+    } 
+    .URLDescription
+    {
+        display: block;
+        float: left;
+        padding-left: 4px;
+        width: 95%;
+    }  
+
+/* Supported SiteURLs end */ 
+/*==============================================
+ START styles for textarea in Unformatted Text part
+----------------------------------------------*/
+    
+    .BBTreeList
+    {
+        border: 1px solid #A6B6C5;
+        background-color: #DEE9FD;
+        height: 100%;
+        padding: 3px;
+    }
+    .BBTreeListNodes
+    {
+        border: 1px solid #A6B6C5;
+        padding: 6px;
+        background-color: White;
+    }
+    
+/*==============================================
+ END styles for textarea in Unformatted Text part
+----------------------------------------------*/
+
+
+/*==============================================
+ Start Delivery channel / Style Management
+----------------------------------------------*/
+
+.DeliveryChannelTabPanel {
+
+}
+.AdminGalleryContentDeliveryChannel{
+
+}
+.DeliveryChannelTabContainer {
+background-color: #FFFFFF;
+    border: 1px solid #A6B6C5;
+    margin: 0 3px 3px 0;
+    padding: 5px;
+}
+
+.DeliveryChannelSelectedTabStyle {}
+
+/*.DeliveryChannelInnerTabContainer, StyleSheetRepeater{
+border:1px solid #A6B6C5;
+background-color:#ffffff;
+padding:6px;
+ } */
+ 
+ .SelectLayoutRepeatingContainer {float:left; width: 45%; }
+ .SelectLayoutRepeatingContainer:nth-child(even) {margin-right:15px;}
+  .SelectLayoutRepeatingContainer:nth-child(odd) {margin-left:40px;}
+ .SelectLayoutRepeatingInnerContainer { display:block; float:left;  width: 100%; background-color: #DCEBFE; border: 1px solid #A6B6C5; padding: 6px 4px;}
+ .floatLeft {float:left; display:block;}
+ .SelectLayoutRepeatingFieldHeading {display:block; float:left; width:225px; font-weight:bold; font-size:12px; margin:15px 0 0 6px;  font-family: Verdana,Arial,sans-serif;
+    font-style: italic; color:#444444;}
+    .SelectLayoutRepeatingSecondLevelInnerContainer {    background-color: #FFFFFF;
+    border: 1px solid #A6B6C5;
+    clear: left;
+    display: block;
+    float: left;
+    padding: 6px 4px;
+    width: 97%; }
+
+
+
+
+.unsorted {
+margin:0px;
+padding:0px;
+}
+
+.layoutStyleSheet {
+    background-color: #FFFFCC;
+    font-weight: bold;
+    height: 25px;
+}
+.defaultStyleSheet {
+    background-color: #FFFFCC;
+    font-weight: bold;
+    height: 25px;
+}
+
+.defaultStyleSheet{background-color:#FFFFCC;  font-weight:bold;}
+    .layoutStyleSheet{background-color:InfoBackground;  font-weight:bold; }
+    .additionalStyle{background-color:white;}    
+    .actions img{cursor:pointer;}
+    .actions span{cursor:default;}
+    .layoutGridItem{background-color:InfoBackground;}
+    .btnAddStyleSheet{display:none;}
+
+    .gridItem { border:1px solid #ccc; *height:auto;}
+    .grip {display: inline-block; *display:inline-table;  padding: 3px; cursor: move; }
+    .actions {display: inline-block; *display:inline-table;  width:85px; padding-top: 3px; padding-bottom: 3px; }
+    .name {display: inline-block; *display:inline-table;  width:250px;}
+    .media {display: inline-block; *display:inline-table;  width:25%;}
+    .owner{ display: inline-block; *display:inline-table;  width:10%;}
+    .hidden {visibility:hidden;}
+    .DeliveryChannelGrid {background-color: #DCEBFE; border: 1px solid #A6B6C5; padding: 6px 4px;}
+    .DeliveryChannelHeader { font-weight: bold;}
+    .DeliveryChannelContainer {background-image: url("../../../images/cascade_order.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 60px; min-height:150px;}
+    .DeliveryChannelList {background-color: #FFFFFF; border: 1px solid #A6B6C5; margin-top: 2px; margin-bottom: 8px; }
+    .DeliveryChannelInstructionalText {}
+    .ui-sortable-helper, .ui-sortable-helper .layoutStyleSheet, .ui-sortable-helper .defaultStyleSheet {background-color:#FFCC66; }
+    .sortable li {cursor:pointer;}
+
+    .DeliveryChannelSaveButton {display: block; margin-left: 60px; padding: 4px; text-decoration:none; width: 50px;}
+    .DeliveryChannelSaveButton img {vertical-align:text-top; margin-right:3px;}
+    .AddStyleSheet {margin-right:12px; text-decoration:none; color:#333333; margin-top:8px;}
+    .AddStyleSheet > img {vertical-align:text-top;}
+    .AddStyleSheet2 {margin-right:12px; text-decoration:none; color:#333333; margin-top:8px;}
+    .AddStyleSheet2 > img {vertical-align:text-top;}
+    .ui-sortable-placeholder { visibility:visible !important; background-color:#FFF0A5; border:1px solid #FED22F; }
+.AddStyleSheet {
+    color: #333333;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.BBAdminButtonLnk {
+    margin: 0px 2px 0 0;
+}
+
+.sortable, .sortable li {
+    height: auto !important;
+}
+
+
+.sortable li.layoutGridItem {
+padding-left:31px;
+*display:block;
+*height:auto !important;
+*margin-left:0px;
+*display:table;
+*z-index:1;
+}
+
+.gridItem Div {
+display:block;
+}
+
+.gridItem div.layoutStyleSheet {
+*margin-top:-6px;
+*margin-bottom:-6px;
+}
+
+.gridItem {
+*border:none !important;
+} 
+
+.gridItem div.layoutStyleSheet {
+*margin-top:-12px;
+*padding-bottom:4px;
+}
+
+.gridItem div.defaultStyleSheet {
+*margin-top:-12px;
+*padding-bottom:4px;
+
+} 
+
+
+/* support pbi */ 
+/* part editor top buttons not discoveriable */ 
+.AdminToolbarContainer .BBAdminToolbarDiv a, .AdminModalToolbarContainer .BBAdminToolbarDiv a { 
+background:none repeat scroll 0 0 #A6C560; 
+background: -moz-linear-gradient(top, #dcfc94 0%, #a6c560 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcfc94), color-stop(100%,#a6c560)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dcfc94 0%,#a6c560 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dcfc94 0%,#a6c560 100%); /* Opera11.10+ */
+border: 1px solid #CCCCCC;
+-moz-border-radius: 0.5em 0.5em 0.5em 0.5em / 1em 1em 1em 1em;
+border-radius: 4px 4px 4px 4px;
+box-shadow: 1px 1px #CCCCCC;
+margin: 2px 6px 0 0;
+color:#000;
+}
+
+.AdminToolbarContainer .BBAdminToolbarDiv a:hover, .AdminToolbarContainer .BBAdminToolbarDiv a[title="View online help for this screen"]:hover, .AdminModalToolbarContainer .BBAdminToolbarDiv a:hover { 
+background: #DCFC94; /* Old browsers */
+background: -moz-linear-gradient(top, #a6c560 0%, #dcfc94 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6c560), color-stop(100%,#dcfc94)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a6c560 0%,#dcfc94 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a6c560 0%,#dcfc94 100%); /* Opera11.10+ */
+}
+
+.AdminToolbarContainer .BBAdminToolbarDiv a[title="View online help for this screen"], .AdminModalToolbarContainer .BBAdminToolbarDiv a[title="View online help for this screen"] { 
+background: none; /* Old browsers */
+border: none;
+    border-radius: none;
+    box-shadow: none;
+    margin: 2px 6px 0 0;
+color:#333;
+float:right
+
+}
+
+
+.BBAdminButtonLnk .x-btn-text-icon { 
+background:none repeat scroll 0 0 #A6C560; 
+background: -moz-linear-gradient(top, #dcfc94 0%, #a6c560 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcfc94), color-stop(100%,#a6c560)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dcfc94 0%,#a6c560 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dcfc94 0%,#a6c560 100%); /* Opera11.10+ */
+-moz-border-radius: 0.5em 0.5em 0.5em 0.5em / 1em 1em 1em 1em;
+border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px #CCCCCC;
+border: 1px solid #ccc;
+    margin: 2px 6px 0 0;
+color:#fff;
+}
+
+.BBAdminButtonLnk .x-btn-text-icon:hover { 
+background: #DCFC94; /* Old browsers */
+background: -moz-linear-gradient(top, #a6c560 0%, #dcfc94 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6c560), color-stop(100%,#dcfc94)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a6c560 0%,#dcfc94 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a6c560 0%,#dcfc94 100%); /* Opera11.10+ */
+
+}
+
+
+
+.BBAdminButtonLnk .x-btn-text-icon .x-btn-text {
+color:#000;
+}
+
+
+.AdminToolbarContainer {
+ background: none repeat scroll 0 0 whitesmoke;
+    border-bottom: 1px solid #A6B6C5;
+    height: 30px;
+    position: relative;
+}
+
+.AdminToolbarContainer a span {
+
+}
+.BBAdminToolbarDiv .BBAdminButtonHover, .AdminModalToolbarBG img {
+visibility:hidden;
+}
+
+.AdminModalToolbarBG, .AdminModalToolbarContainer {
+background: #f6f8f9; /* Old browsers */
+background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */border-bottom: 1px solid #A6B6C5;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.AdminToolbarContainer {
+background: #f6f8f9; /* Old browsers */
+background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */background: linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C */border-bottom: 1px solid #A6B6C5;
+    height: 30px;
+    position: relative;
+}
+
+.AdminToolbarContainerBG {
+background: #f6f8f9; /* Old browsers */
+background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+
+.AdminToolbarContainer .BBAdminToolbarDiv a .BBAdminButtonLabel {
+    display: block;
+    float: left;
+    padding: 2px 0 3px;
+    position: relative;
+}
+
+
+/* parts filter button */ 
+.BBPartsFilterButton {
+background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera11.10+ */
+ background: #e1e1e1; /* Old browsers */
+ border: 1px solid #666666;
+    border-radius: 4px 4px 4px 4px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* 	
+Bug #153836: Email/ Email Campaigns/ Site name in Select an Email Template should be left aligned to match rest of site */
+
+.SearchFieldContainer .SearchFieldText {text-align: left;}
+
+/*******************************
+Begin Admin Grid Styles
+********************************/
+
+    .GridActionBar
+    {
+        border-top:1px solid #A6B6C5;
+        border-left:1px solid #A6B6C5;
+        border-right:1px solid #A6B6C5;
+        padding:2px 5px 1px 5px;
+        background:whitesmoke;
+    }
+    .GridActionDisplayContainer
+    {
+        text-align:center;        
+        border:1pt solid #c0c0c0;
+        background-color:#ffffce;
+        padding-top:2px;
+        padding-bottom:2px; 
+        border-bottom:0;
+    }    
+    .GridActionDisplayContainerHidden
+    {
+        display:none;
+    }
+    .GridActionLink
+    {
+         color:Blue;
+         text-decoration:underline;
+    }
+    .GridActionLink.SelectAllMessage
+    {
+        cursor:pointer;
+    }
+
+    .GridActionToolbarItemContent
+    {
+        padding:0 7px;
+        display:block;
+        position:relative;
+    }     
+    .GridActionToolbarItemIcon
+    {
+        float:left;
+        display:block;
+        padding: 0 3px 0 0;
+        position:relative;
+        top:2px;
+    }
+    .GridActionToolbarItemLabel
+    {
+        display:block;
+        padding:2px 0 3px;
+        float:left;
+        position:relative;
+    }
+    .GridActionToolbarItem
+    { 
+        cursor:pointer;
+        cursor:hand;        
+        
+        background: none repeat scroll 0 0 #B6CBE5; 
+        background: -moz-linear-gradient(top, #DEE9FD 0%, #B6CBE5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DEE9FD), color-stop(100%,#B6CBE5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #DEE9FD 0%,#B6CBE5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #DEE9FD 0%,#B6CBE5 100%); /* Opera11.10+ */
+        border: 1px solid #CCCCCC;
+        -moz-border-radius: 0.5em 0.5em 0.5em 0.5em / 1em 1em 1em 1em;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 1px 1px #CCCCCC;
+        margin: 2px 6px 0 0;
+        color:#000;           
+        
+        height:20px;
+        padding:0;
+        padding-top:2px;   
+        float:left;
+        display:block;  
+    }
+    .GridActionToolbarItem:hover
+    {         
+        background: none repeat scroll 0 0 #DEE9FD; 
+        background: -moz-linear-gradient(top, #B6CBE5 0%, #DEE9FD 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B6CBE5), color-stop(100%,#DEE9FD)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #B6CBE5 0%,#DEE9FD 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #B6CBE5 0%,#DEE9FD 100%); /* Opera11.10+ */       
+    }
+    .GridActionToolbarItemDisabled, .GridActionToolbarItemDisabled:hover
+    {
+        cursor: default;
+        background: none repeat scroll 0 0 #DEE9FD; 
+        background: -moz-linear-gradient(top, #DEE9FD 0%, #DEE9FD 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DEE9FD), color-stop(100%,#DEE9FD)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #DEE9FD 0%,#DEE9FD 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #DEE9FD 0%,#DEE9FD 100%); /* Opera11.10+ */        
+    }
+    .AdminGridScroller
+    {
+        position:relative;
+        padding:0px 1px 0px 1px;
+    }    
+    .AdminGridRebindButton
+    {
+        display:none;    
+    }
+    .AdminDataGridItemCell input, .DataGridItemCell select
+    {
+        margin:0px 0px 0px 0px;
+    }    
+    .GridActionToolbarWrapper
+    {
+        height:30px;
+    }    
+/*******************************
+End Admin Grid Styles
+********************************/
+
+/*******************************
+Admin jQuery Dialog Styles
+********************************/
+.ui-widget-overlay {*position:fixed !IMPORTANT;}
+/*******************************
+End Admin jQuery Dialog Styles
+********************************/
+
+.SiteDropDownContainer .NonClickableNode{ color:#666666;}
+.SiteDropDownMenu
+{
+	background-color: #FFFFFF;
+    border: 1px solid #999999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 9999;
+
+}
+.SiteDropDownMenuContainer
+{
+	overflow: visible;
+}
+.SiteDropDownMenu input
+{
+	display:none
+}
+.tree-default li a, .tree-default li span 
+{ 
+    padding:1px 4px 1px 23px; 
+}    
+
+.ImageItemTop
+{
+    width: 131px;
+    height: 132px; 
+    margin: 5px; 
+    border-radius: 
+    9px; position: relative; 
+    border-width: 2px; 
+    border-style: solid;
+    background-color:#FFFEC8;
+    border-color: #F8E26F;     
+}
+
+.ApprovedImage .ImageItemTop
+{
+    background-color:#CAE7F9;
+    border-color: #CEE6F8;  
+}
+.SelectedImage .ImageItemTop
+{
+    background-color:#F9F0CA;
+    border-color: #CDBA7D;      
+}
+.ApprovedSelectedImage .ImageItemTop
+{
+    background-color:#7EA3D1;
+    border-color: #819FBE;      
+}
+
+.Gallery_ItemContainer
+{
+    width: 138px;
+    height: 169px;
+    float: left;
+    margin-left:1px;
+    margin-left:1px;
+}
+
+.ImageItemBottom
+{
+    width: 131px;
+    height: 66px; 
+    border-bottom-left-radius: 9px; 
+    border-bottom-right-radius: 9px;
+    position: absolute; 
+    bottom: 0px;
+    background-color:#FBF078;
+}
+.ApprovedImage .ImageItemBottom
+{
+    background-color:#DAF3FD;
+}
+.SelectedImage .ImageItemBottom
+{
+    background-color:#F5C674; 
+}
+.ApprovedSelectedImage .ImageItemBottom
+{
+    background-color:#97B6DC; 
+}
+
+
+/*==============================================
+ Image gallery
+----------------------------------------------*/
+.ImageItemContent
+{
+    position: relative; 
+    z-index: 1;
+}
+.ImageGridContainer
+{
+    background-color:#FFFFFF;
+}
+.ImageGridContainer .AdminGridScroller
+{
+    height: 510px;
+    overflow: auto;
+}
+.ImageGalleryPreview .image img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ImageGalleryPreview .imagePreviewFooter
+{
+    height: 75px;
+    padding-top: 10px;
+}
+.ImageGalleryPreview .imagePreviewFooter div
+{
+    margin-top:8px;
+}
+.ImageGalleryPreview .imagePreviewFooter .imageName
+{
+    font-weight:bold;
+}
+.ImageGalleryPreview .imageLink
+{
+    word-wrap: break-word;
+}
+.ImageGalleryPreview .imagePreviewFooter .toolbar span
+{
+    margin-right:15px;
+}
+.ImageGalleryPreview .imagePreviewFooter .toolbar span img
+{
+    position:relative;
+    top: 4px;
+}
+.ImageGalleryPreview .imagePreviewFooter .toolbar .button
+{
+    cursor:pointer;
+}
+.TaskCell
+{
+    text-align:center;
+}
+
+/*==============================================
+ Rules Grid
+----------------------------------------------*/
+.ext-ie7 .RulesGrid div
+{
+    position: static;
+}
+
+/* new breadcrumb layout */
+.breadcrumbList li
+{
+    list-style: none;
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 5px 0 0 !important;
+}
+
+.BBElementBlock
+{
+    width: 220px;
+    height: 44px;
+    text-align:center;
+    margin-left: -110px;
+    margin-top: -22px;
+    padding: 5px;
+    box-shadow:0 2px 5px #666666;
+    border: 1px solid #999999;
+    background: url(../../../images/ajaxwaitbar.gif) no-repeat scroll center 25px Transparent;
+    background-color: #F5F5F5
+}
+
+.BBPageBlock
+{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.BBElementBlock span
+{
+    padding:0 3px;
+}
+
+.WebShellDialog.ui-dialog
+{
+    background: #CED9E7;
+    padding:4px;
+    box-shadow: 2px 5px 25px #666;
+    border-radius: 0.4em;
+    position:absolute; 
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-titlebar
+{
+    background:#CED9E7;
+    border: none;
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-content
+{
+    background:#FFFFFF;
+    border: 1px solid #99BBE8;
+    font: 10pt tahoma,arial,helvetica,sans-serif;
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-buttonpane
+{
+    background: #CED9E7;
+    border:none;
+    margin: 0;
+    padding: 5px 0 6px 0;
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-buttonset
+{
+    float:right
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-buttonpane button
+{
+    float:none;
+    font: 11px arial,tahoma,verdana,helvetica;
+    min-width: 75px;
+    color: #333333;
+    border-radius: 0.4em;
+    border: 1px solid #999999;
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-titlebar-close
+{
+    display:none;
+}
+    
+.WebShellDialog.ui-dialog .ui-dialog-title
+{
+    color: #15428B;
+    font: bold 11px tahoma,arial,verdana,sans-serif;
+}
+.WebShellDialog.ui-dialog .ui-dialog-titlebar
+{
+    padding: 5px 0 4px;
+}

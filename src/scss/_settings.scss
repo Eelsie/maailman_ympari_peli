@@ -1,0 +1,29 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'veneerregular';
+    src: url('../fonts/veneer-webfont.eot');
+    src: url('../fonts/veneer-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/veneer-webfont.woff') format('woff'),
+         url('../fonts/veneer-webfont.ttf') format('truetype'),
+         url('../fonts/veneer-webfont.svg#veneerregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* SASS VAR */
+
+$blue: #0072ce;
+$lightblue: #58cae7;
+$pink: #ef008c;
+$red: #d22630;
+$orange: #e17800;
+$yellow: #f1c400;
+$lightgray: #d9d9d6;
+$black: #555555;
+$white: #fff;
+$green: #00843d;
+
+$veneer: "veneerregular", Helvetica, Arial, sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

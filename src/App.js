@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+
 import './scss/App.scss';
 import Header from './components/header';
-import Alypaa from './components/alypaa';
+import Footer from './components/footer';
+import Map from './components/map';
 
-
-class App extends Component { // change to class component
+class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <Header />
-        <Alypaa />
-      </div>
+        <div className="wrapper">
+          <Header />
+          <Map />
+            {this.props.children}
+          <Footer />
+        </div>
     );
   }
 }

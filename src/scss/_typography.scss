@@ -1,0 +1,16 @@
+h1, h2, .btn {
+  font-family: $veneer;
+  font-weight: normal;
+}
+
+h1 {
+  color: $orange;
+  display: inline-block;
+  font-size: 3vw;
+  vertical-align: super;
+}
+
+h2 {
+  color: $white;
+  font-size: 4vw;
+}

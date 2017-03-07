@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import circle from '../img/circle.svg';
 
 // counter for questions array
 
@@ -37,12 +36,14 @@ class AlypaaQuestion extends Component {
 
   newQuestion(trueOrFalse, event) {
     event.preventDefault();
-    console.log(event.target.parentNode);
     if (trueOrFalse === true) {
-      event.persist(event.target.parentNode.classList.add('btn__qline--green'));
+      event.persist(event.target.classList.add('btn--green'));
       setTimeout(function() {
         this.setState({ count: this.state.count + 1 });
-        event.persist(event.target.parentNode.classList.remove('btn__qline--green'));
+        var counter = this.state.count.toString();
+        console.log(counter);
+        document.getElementById(counter).classList.add('btn--green');
+        event.persist(event.target.classList.remove('btn--green'));
       }.bind(this), 1500);
     } else {
       console.log("lost!");
@@ -59,41 +60,41 @@ class AlypaaQuestion extends Component {
         </div>
         <div className="question">
           <div className="btn__qline xs-mt-20 xs-p-15 xs-mb-30"><h4>{this.props.questions[this.state.count].question}</h4></div>
-          <button className="btn__qline xs-mt-20 xs-p-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[0][1], event)} ><p>{this.props.questions[this.state.count].answers[0][0]}</p></button>
-          <button className="btn__qline xs-mt-20 xs-p-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[1][1], event)} ><p>{this.props.questions[this.state.count].answers[1][0]}</p></button>
-          <button className="btn__qline xs-mt-20 xs-p-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[2][1], event)} ><p>{this.props.questions[this.state.count].answers[2][0]}</p></button>
-          <button className="btn__qline xs-mt-20 xs-p-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[3][1], event)} ><p>{this.props.questions[this.state.count].answers[3][0]}</p></button>
+          <button className="btn__qline xs-mt-20" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[0][1], event)} >{this.props.questions[this.state.count].answers[0][0]}</button>
+          <button className="btn__qline xs-mt-20" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[1][1], event)} >{this.props.questions[this.state.count].answers[1][0]}</button>
+          <button className="btn__qline xs-mt-20" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[2][1], event)} >{this.props.questions[this.state.count].answers[2][0]}</button>
+          <button className="btn__qline xs-mt-20" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[3][1], event)} >{this.props.questions[this.state.count].answers[3][0]}</button>
         </div>
         <div className="xs-mt-40">
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
+          <div className="circle" id="1"></div>
+          <div className="circle" id="2"></div>
+          <div className="circle" id="3"></div>
+          <div className="circle" id="4"></div>
+          <div className="circle" id="5"></div>
 
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
+          <div className="circle" id="6"></div>
+          <div className="circle" id="7"></div>
+          <div className="circle" id="8"></div>
+          <div className="circle" id="9"></div>
+          <div className="circle" id="10"></div>
 
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
+          <div className="circle" id="11"></div>
+          <div className="circle" id="12"></div>
+          <div className="circle" id="13"></div>
+          <div className="circle" id="14"></div>
+          <div className="circle" id="15"></div>
 
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
+          <div className="circle" id="16"></div>
+          <div className="circle" id="17"></div>
+          <div className="circle" id="18"></div>
+          <div className="circle" id="19"></div>
+          <div className="circle" id="20"></div>
 
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
-          <img className="circle" src={circle} role="presentation"/>
+          <div className="circle" id="21"></div>
+          <div className="circle" id="22"></div>
+          <div className="circle" id="23"></div>
+          <div className="circle" id="24"></div>
+          <div className="circle" id="25"></div>
         </div>
       </div>
     );

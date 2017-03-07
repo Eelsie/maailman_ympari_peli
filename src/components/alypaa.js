@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AlypaaQuestion from './alypaa-question';
+import AlypaaIntro from './alypaa-intro';
 
 // function renderCircles() {
 //   var circleList = document.querySelector('.circle-list');
@@ -35,11 +36,10 @@ class Alypaa extends Component {
 
   render() {
     return (
-      <div className="box">
-        <h3>Älypää</h3>
-
+      <div className="box xs-p-30">
+        <h2 className="xs-mb-10">Älypää</h2>
+        <AlypaaIntro />
         <AlypaaQuestion questions={this.state.questions}/>
-
       </div>
     );
   }

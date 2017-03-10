@@ -1,12 +1,6 @@
 import React, {Component} from 'react';
 import AlypaaQuestion from './alypaa-question';
-
-// function renderCircles() {
-//   var circleList = document.querySelector('.circle-list');
-//   for(var i = 0; i < 25; i++) {
-//     circleList.document.write(<img className="circle" src="../img/circle.svg" role="presentation"/>);
-//   }
-// }
+import AlypaaIntro from './alypaa-intro';
 
 const questions = [
   {
@@ -29,17 +23,34 @@ class Alypaa extends Component {
     super(props);
 
     this.state = {
-      questions: questions
+      questions: questions,
+      showIntro: true
     };
+
+    this.handleIntro = this.handleIntro.bind(this);
+
+  }
+
+  handleIntro() {
+    this.setState({ showIntro: false});
+    console.log('hgkjvfdbgktg');
   }
 
   render() {
-    return (
-      <div className="box xs-p-30">
-        <AlypaaQuestion questions={this.state.questions}/>
-      </div>
-    );
+    if(this.state.showIntro) {
+      return (
+          <AlypaaIntro handleIntro={this.handleIntro}/>
+      );
+    } else {
+      return (
+        <div>
+          <AlypaaQuestion questions={this.state.questions}/>
+        </div>
+      );
+    }
   }
+
+
 }
 
 

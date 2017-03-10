@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, indexRoute} from 'react-router';
+import {Route, Routeindex} from 'react-router';
 
 import App from './App';
 import Alypaa from './components/alypaa';

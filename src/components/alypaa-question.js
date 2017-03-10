@@ -1,25 +1,5 @@
 import React, {Component} from 'react';
 
-// counter for questions array
-
-
-// 25 seconds timer
-// function startTimer() {
-//   var counter = 25;
-//   var width = 0;
-//   var bar = document.querySelector(".progress");
-//   setInterval(function() {
-//     counter--;
-//     if(counter < 0) {
-//         clearInterval();
-//     } else {
-//         document.querySelector('.seconds').textContent = counter; // decrease the seconds counter
-//         width += 4;
-//         bar.style.width = width + '%'; // increase the width of the progress bar
-//     }
-// }, 1000);
-// }
-
 
 
 class AlypaaQuestion extends Component {
@@ -27,21 +7,57 @@ class AlypaaQuestion extends Component {
     super(props);
 
     this.state = {
-      count: 0,
+      count: 0
     };
 
-    this.newQuestion = this.newQuestion.bind(this)
+    this.newQuestion = this.newQuestion.bind(this);
+    // this.startTimer = this.startTimer.bind(this);
 
   }
 
+  // var intervalRunning = false;
+  // var counter = 25;
+  // var width = 0;
+  // var bar = document.querySelector(".progress");
+  // var timer = setInterval(function() {
+  //     intervalRunning = true;
+  //     counter--;
+  //     if(counter < 0) {
+  //       return;
+  //     } else {
+  //       document.querySelector('.seconds').textContent = counter; // decrease the seconds counter
+  //       width += 4;
+  //       bar.style.width = width + '%'; // increase the width of the progress bar
+  //     }
+  // }, 1000);
+  //
+  //
+  // componentDidMount() {
+  //   if (intervalRunning === true) {
+  //     clearInterval(timer);
+  //     intervalRunning = false;
+  //   } else {
+  //     timer();
+  //   }
+  // }
+
+
   newQuestion(trueOrFalse, event) {
     event.preventDefault();
+
+    // if (intervalRunning === true) {
+    //   clearInterval(timer);
+    //   intervalRunning = false;
+    // } else {
+    //   counter = 25;
+    //   timer();
+    // }
+
     if (trueOrFalse === true) {
       event.persist(event.target.classList.add('btn--green'));
       setTimeout(function() {
         this.setState({ count: this.state.count + 1 });
         var counter = this.state.count.toString();
-        console.log(counter);
         document.getElementById(counter).classList.add('btn--green');
         event.persist(event.target.classList.remove('btn--green'));
       }.bind(this), 1500);
@@ -52,11 +68,7 @@ class AlypaaQuestion extends Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <p>Tervetuloa pelaamaan Maailman ympäri Älypää-peliä! Pelissa on 5 tasoa, joista jokaisessa on 5 kysymystä. Onnea peliin!</p>
-          <button className="btn btn--orange xs-p-10 xs-mt-20">Aloita peli</button>
-        </div>
+      <div className="box xs-p-30">
         <div className="bar xs-mt-30">
           <div className="progress-container"><div className="progress-bar"><div className="progress"></div></div></div>
           <div className="score">0</div>

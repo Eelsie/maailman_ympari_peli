@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
-
+var secCounter = 25;
+var width = 0;
 
 class AlypaaQuestion extends Component {
   constructor(props) {
@@ -12,58 +13,47 @@ class AlypaaQuestion extends Component {
 
     this.newQuestion = this.newQuestion.bind(this);
     // this.startTimer = this.startTimer.bind(this);
-
   }
 
-  // var intervalRunning = false;
-  // var counter = 25;
-  // var width = 0;
-  // var bar = document.querySelector(".progress");
-  // var timer = setInterval(function() {
-  //     intervalRunning = true;
-  //     counter--;
-  //     if(counter < 0) {
-  //       return;
-  //     } else {
-  //       document.querySelector('.seconds').textContent = counter; // decrease the seconds counter
-  //       width += 4;
-  //       bar.style.width = width + '%'; // increase the width of the progress bar
-  //     }
-  // }, 1000);
-  //
-  //
-  // componentDidMount() {
-  //   if (intervalRunning === true) {
-  //     clearInterval(timer);
-  //     intervalRunning = false;
-  //   } else {
-  //     timer();
-  //   }
-  // }
+
+  componentDidMount() {
+    var bar = document.querySelector(".progress");
+    setInterval(function() {
+        secCounter--;
+        if(secCounter < 0) {
+          return;
+        } else {
+          document.querySelector('.seconds').textContent = secCounter; // decrease the seconds counter
+          width += 4;
+          bar.style.width = width + '%'; // increase the width of the progress bar
+        }
+    }, 1000);
+  }
+
+  componentDidUpdate() {
+    secCounter = 26;
+    width = -4;
+    var counter = this.state.count.toString();
+    document.querySelector('.btn__qline').classList.remove('btn--green');
+    document.getElementById(counter).classList.add('btn--green');
+  }
+
+
+
 
 
   newQuestion(trueOrFalse, event) {
     event.preventDefault();
-
-    // if (intervalRunning === true) {
-    //   clearInterval(timer);
-    //   intervalRunning = false;
-    // } else {
-    //   counter = 25;
-    //   timer();
-    // }
-
+    width = width - 4;
     if (trueOrFalse === true) {
-      event.persist(event.target.classList.add('btn--green'));
+      event.target.classList.add('btn--green');
+
       setTimeout(function() {
         this.setState({ count: this.state.count + 1 });
-        var counter = this.state.count.toString();
-        document.getElementById(counter).classList.add('btn--green');
-        event.persist(event.target.classList.remove('btn--green'));
-      }.bind(this), 1500);
-    } else {
-      console.log("lost!");
-    }
+      }.bind(this), 1000);
+      } else {
+        this.props.gameLost();
+      }
   }
 
   render() {

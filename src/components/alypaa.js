@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AlypaaQuestion from './alypaa-question';
 import AlypaaIntro from './alypaa-intro';
+import AlypaaLost from './alypaa-lost';
 
 const questions = [
   {
@@ -24,16 +25,23 @@ class Alypaa extends Component {
 
     this.state = {
       questions: questions,
-      showIntro: true
+      showIntro: true,
+      gameLost: false
     };
 
     this.handleIntro = this.handleIntro.bind(this);
+    this.gameLost = this.gameLost.bind(this);
+
 
   }
 
   handleIntro() {
-    this.setState({ showIntro: false});
-    console.log('hgkjvfdbgktg');
+    this.setState({ gameLost: false });
+    this.setState({ showIntro: false });
+  }
+
+  gameLost() {
+    this.setState({ gameLost: true });
   }
 
   render() {
@@ -41,10 +49,14 @@ class Alypaa extends Component {
       return (
           <AlypaaIntro handleIntro={this.handleIntro}/>
       );
+    } else if (this.state.gameLost) {
+      return (
+        <AlypaaLost handleIntro={this.handleIntro}/>
+      );
     } else {
       return (
         <div>
-          <AlypaaQuestion questions={this.state.questions}/>
+          <AlypaaQuestion questions={this.state.questions} gameLost={this.gameLost}/>
         </div>
       );
     }

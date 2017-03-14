@@ -44,7 +44,7 @@ class AlypaaQuestion extends Component {
 
   newQuestion(trueOrFalse, event) {
     event.preventDefault();
-    width = width - 4;
+    width -= 4;
     if (trueOrFalse === true) {
       event.target.classList.add('btn--green');
 

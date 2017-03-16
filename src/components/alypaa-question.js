@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 var secCounter = 25;
 var width = 0;
+var score = 0;
+var timer;
 
 class AlypaaQuestion extends Component {
   constructor(props) {
@@ -12,13 +14,25 @@ class AlypaaQuestion extends Component {
     };
 
     this.newQuestion = this.newQuestion.bind(this);
-    // this.startTimer = this.startTimer.bind(this);
   }
 
 
+  // componentWillMount() { // shuffles the questions
+  //   for (let i = 25; i; i--) {
+  //     let j = Math.floor(Math.random() * i);
+  //     [this.props.questions[i - 1], this.props.questions[j]] = [this.props.questions[j], this.props.questions[i - 1]];
+  //   }
+  // }
+
   componentDidMount() {
+    secCounter = 25;
+    width = 0;
+    clearInterval(timer);
+    document.querySelector('.btn__qline').classList.remove('btn--green');
+    document.querySelector('.btn__qline').classList.remove('btn--red');
+
     var bar = document.querySelector(".progress");
-    setInterval(function() {
+    timer = setInterval(function() {
         secCounter--;
         if(secCounter < 0) {
           return;
@@ -30,11 +44,12 @@ class AlypaaQuestion extends Component {
     }, 1000);
   }
 
+
   componentDidUpdate() {
+    document.querySelector('.btn--green').classList.remove('btn--green');
     secCounter = 26;
     width = -4;
     var counter = this.state.count.toString();
-    document.querySelector('.btn__qline').classList.remove('btn--green');
     document.getElementById(counter).classList.add('btn--green');
   }
 
@@ -47,12 +62,17 @@ class AlypaaQuestion extends Component {
     width -= 4;
     if (trueOrFalse === true) {
       event.target.classList.add('btn--green');
-
+      score += secCounter * 4;
+      document.querySelector('.score').textContent = score;
       setTimeout(function() {
         this.setState({ count: this.state.count + 1 });
       }.bind(this), 1000);
       } else {
-        this.props.gameLost();
+        clearInterval(timer);
+        event.target.classList.add('btn--red');
+        setTimeout(function() {
+          this.props.gameLost();
+        }.bind(this), 1000);
       }
   }
 
@@ -61,7 +81,7 @@ class AlypaaQuestion extends Component {
       <div className="box xs-p-30">
         <div className="bar xs-mt-30">
           <div className="progress-container"><div className="progress-bar"><div className="progress"></div></div></div>
-          <div className="score">0</div>
+          <div className="score">{score}</div>
           <div className="seconds">25</div>
         </div>
         <div className="question">

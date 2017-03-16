@@ -15,8 +15,17 @@ const questions = [
   {
     question: 'Kysymys 3',
     answers: [['answer 3.1', false], ['answer 3.2', false], ['answer 3.3', false], ['answer 3.4', true]]
+  },
+  {
+    question: 'Kysymys 4',
+    answers: [['answer 4.1', false], ['answer 4.2', false], ['answer 4.3', false], ['answer 4.4', true]]
+  },
+  {
+    question: 'Kysymys 5',
+    answers: [['answer 5.1', false], ['answer 5.2', false], ['answer 5.3', false], ['answer 5.4', true]]
   }
 ];
+
 
 
 class Alypaa extends Component {

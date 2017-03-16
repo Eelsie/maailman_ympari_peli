@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 var secCounter = 25;
 var width = 0;
-var score = 0;
+let scoreTemp = 0;
 var timer;
 
 class AlypaaQuestion extends Component {
@@ -46,7 +46,7 @@ class AlypaaQuestion extends Component {
 
 
   componentDidUpdate() {
-    document.querySelector('.btn--green').classList.remove('btn--green');
+    document.querySelector('.btn__qline').classList.remove('btn--green');
     secCounter = 26;
     width = -4;
     var counter = this.state.count.toString();
@@ -62,10 +62,12 @@ class AlypaaQuestion extends Component {
     width -= 4;
     if (trueOrFalse === true) {
       event.target.classList.add('btn--green');
-      score += secCounter * 4;
-      document.querySelector('.score').textContent = score;
+      scoreTemp = this.props.score;
+      scoreTemp += secCounter * 4;
+      document.querySelector('.score').textContent = scoreTemp;
       setTimeout(function() {
         this.setState({ count: this.state.count + 1 });
+        this.props.increaseScore(scoreTemp);
       }.bind(this), 1000);
       } else {
         clearInterval(timer);
@@ -81,7 +83,7 @@ class AlypaaQuestion extends Component {
       <div className="box xs-p-30">
         <div className="bar xs-mt-30">
           <div className="progress-container"><div className="progress-bar"><div className="progress"></div></div></div>
-          <div className="score">{score}</div>
+          <div className="score">{scoreTemp}</div>
           <div className="seconds">25</div>
         </div>
         <div className="question">

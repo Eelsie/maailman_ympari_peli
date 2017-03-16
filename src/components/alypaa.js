@@ -35,11 +35,13 @@ class Alypaa extends Component {
     this.state = {
       questions: questions,
       showIntro: true,
-      gameLost: false
+      gameLost: false,
+      score: 0
     };
 
     this.handleIntro = this.handleIntro.bind(this);
     this.gameLost = this.gameLost.bind(this);
+    this.increaseScore = this.increaseScore.bind(this);
 
 
   }
@@ -47,6 +49,10 @@ class Alypaa extends Component {
   handleIntro() {
     this.setState({ gameLost: false });
     this.setState({ showIntro: false });
+  }
+
+  increaseScore(score) {
+    this.setState({ score: score });
   }
 
   gameLost() {
@@ -65,7 +71,7 @@ class Alypaa extends Component {
     } else {
       return (
         <div>
-          <AlypaaQuestion questions={this.state.questions} gameLost={this.gameLost}/>
+          <AlypaaQuestion questions={this.state.questions} score={this.state.score} gameLost={this.gameLost} increaseScore={this.increaseScore}/>
         </div>
       );
     }

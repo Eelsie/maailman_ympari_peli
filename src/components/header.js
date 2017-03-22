@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 import logo from '../img/plan-logo.svg';
 import pass from '../img/pass.svg';
-import map from '../img/map.svg';
+import map from '../img/map_o.svg';
 
 
 const Header = () =>  {

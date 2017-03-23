@@ -28,9 +28,6 @@ class AlypaaQuestion extends Component {
     secCounter = 25;
     width = 0;
     clearInterval(timer);
-    document.querySelector('.btn__qline').classList.remove('btn--green');
-    document.querySelector('.btn__qline').classList.remove('btn--red');
-
     var bar = document.querySelector(".progress");
     timer = setInterval(function() {
         secCounter--;
@@ -46,11 +43,16 @@ class AlypaaQuestion extends Component {
 
 
   componentDidUpdate() {
-    document.querySelector('.btn__qline').classList.remove('btn--green');
     secCounter = 26;
     width = -4;
     var counter = this.state.count.toString();
-    document.getElementById(counter).classList.add('btn--green');
+    document.getElementById(counter).className += ' btn--green';
+    document.getElementById('q-btn1').className = 'btn__qline xs-mt-15';
+    document.getElementById('q-btn2').className = 'btn__qline xs-mt-15';
+    document.getElementById('q-btn3').className = 'btn__qline xs-mt-15';
+    document.getElementById('q-btn4').className = 'btn__qline xs-mt-15';
+
+
   }
 
 
@@ -61,7 +63,7 @@ class AlypaaQuestion extends Component {
     event.preventDefault();
     width -= 4;
     if (trueOrFalse === true) {
-      event.target.classList.add('btn--green');
+      event.target.className += ' btn--green';
       scoreTemp = this.props.score;
       scoreTemp += secCounter * 4;
       document.querySelector('.score').textContent = scoreTemp;
@@ -71,7 +73,7 @@ class AlypaaQuestion extends Component {
       }.bind(this), 1000);
       } else {
         clearInterval(timer);
-        event.target.classList.add('btn--red');
+        event.target.className += ' btn--red';
         setTimeout(function() {
           this.props.gameLost();
         }.bind(this), 1000);
@@ -88,10 +90,10 @@ class AlypaaQuestion extends Component {
         </div>
         <div className="question">
           <div className="xs-mt-30"><h4>{this.props.questions[this.state.count].question}</h4></div>
-          <button className="btn__qline xs-mt-30" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[0][1], event)} >{this.props.questions[this.state.count].answers[0][0]}</button>
-          <button className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[1][1], event)} >{this.props.questions[this.state.count].answers[1][0]}</button>
-          <button className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[2][1], event)} >{this.props.questions[this.state.count].answers[2][0]}</button>
-          <button className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[3][1], event)} >{this.props.questions[this.state.count].answers[3][0]}</button>
+          <button id="q-btn1" className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[0][1], event)} >{this.props.questions[this.state.count].answers[0][0]}</button>
+          <button id="q-btn2" className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[1][1], event)} >{this.props.questions[this.state.count].answers[1][0]}</button>
+          <button id="q-btn3" className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[2][1], event)} >{this.props.questions[this.state.count].answers[2][0]}</button>
+          <button id="q-btn4" className="btn__qline xs-mt-15" onClick={(event) => this.newQuestion(this.props.questions[this.state.count].answers[3][1], event)} >{this.props.questions[this.state.count].answers[3][0]}</button>
         </div>
         <div className="xs-mt-40">
           <div className="circle" id="1"></div>
@@ -123,7 +125,7 @@ class AlypaaQuestion extends Component {
           <div className="circle" id="23"></div>
           <div className="circle" id="24"></div>
           <div className="circle" id="25"></div>
-          
+
         </div>
       </div>
     );

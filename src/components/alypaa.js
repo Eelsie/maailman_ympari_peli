@@ -6,7 +6,7 @@ import AlypaaLost from './alypaa-lost';
 const questions = [
   {
     question: 'Kysymys 1',
-    answers: [['answer 1.1', true], ['answer 1.2', false], ['answer 1.3', false], ['answer 1.4', false]],
+    answers: [['answer 1.1', false], ['answer 1.2', false], ['answer 1.3', false], ['answer 1.4', true]],
   },
   {
     question: 'Kysymys 2',
